@@ -5,39 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Alapan Kuila | Academic Profile</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; }
-    header { background: #1f2937; color: #fff; padding: 30px 20px; text-align: center; }
-    nav { background: #374151; padding: 10px; text-align: center; }
-    nav a { color: #fff; margin: 0 12px; text-decoration: none; font-weight: bold; }
-    section { padding: 25px; max-width: 950px; margin: auto; }
+    body { font-family: Arial, sans-serif; margin: 0; background:#f5f7fb; }
+    header { background: #111827; color: #fff; padding: 30px 20px; }
+    .container { max-width: 1100px; margin: auto; }
+    .header-flex { display: flex; align-items: center; gap: 25px; flex-wrap: wrap; }
+    .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; }
+    nav { background: #1f2937; padding: 12px; text-align: center; }
+    nav a { color: #fff; margin: 0 14px; text-decoration: none; font-weight: bold; }
+    section { padding: 25px; background: #fff; margin: 20px auto; border-radius: 10px; }
     h2 { border-bottom: 2px solid #e5e7eb; padding-bottom: 5px; }
     ul { padding-left: 20px; }
     .highlight { color: #b91c1c; font-weight: bold; }
-    .card { background: #f9fafb; padding: 15px; border-radius: 10px; margin-bottom: 15px; }
-    footer { background: #1f2937; color: #fff; text-align: center; padding: 12px; margin-top: 30px; }
+    .card { background: #f9fafb; padding: 15px; border-radius: 10px; margin-bottom:10px; }
+    .btn { display:inline-block; padding:10px 15px; background:#2563eb; color:#fff; text-decoration:none; border-radius:6px; margin-top:10px; }
+    footer { background: #111827; color: #fff; text-align: center; padding: 12px; margin-top: 30px; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Dr. Alapan Kuila</h1>
-  <p>Assistant Professor, IIITDM Kurnool</p>
-  <p>Machine Learning | NLP | LLMs | Generative AI</p>
+  <div class="container header-flex">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <div>
+      <h1>Dr. Alapan Kuila</h1>
+      <p>Assistant Professor, IIITDM Kurnool</p>
+      <p>Machine Learning | NLP | LLMs | Generative AI</p>
+      <a class="btn" href="cv.pdf">Download CV</a>
+    </div>
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#research">Research</a>
   <a href="#publications">Publications</a>
-  <a href="#experience">Experience</a>
+  <a href="#students">Students</a>
+  <a href="#teaching">Teaching</a>
   <a href="#updates">Updates</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<div class="container">
+
 <section id="about">
-  <h2>About Me</h2>
+  <h2>About</h2>
   <p>I am currently an Assistant Professor at IIITDM Kurnool (joined January 2026). Previously, I worked as a Research Scientist at IIT Delhi focusing on LLM evaluation methods for reasoning and climate data analytics.</p>
-  <p>I completed my Ph.D. in Computer Science and Engineering from IIT Kharagpur, where my research focused on multi-dimensional news content analysis, including event extraction, entity and aspect identification, sentiment classification, and media bias analysis using NLP and Information Extraction frameworks.</p>
+  <p>I completed my Ph.D. from IIT Kharagpur in Natural Language Processing, focusing on news analysis, event extraction, sentiment analysis, and media bias understanding.</p>
   <p class="highlight">Looking for PhD students for July 2026 session.</p>
 </section>
 
@@ -48,7 +61,7 @@
     <li>Natural Language Processing (NLP)</li>
     <li>Large Language Models (LLMs)</li>
     <li>Generative AI</li>
-    <li>Information Extraction (IE)</li>
+    <li>Information Extraction</li>
     <li>Computational Social Science</li>
   </ul>
 </section>
@@ -56,31 +69,48 @@
 <section id="publications">
   <h2>Publications</h2>
   <div class="card">
-    <p><b>News has various shades:</b> Quantifying and Analyzing Media Bias at Aspect-level Granularity. ACM Journal, 2024.</p>
-    <p><b>From Text to Context:</b> An Entailment Approach for News Stakeholder Classification. SIGIR 2024.</p>
-    <p><b>Deciphering Political Entity Sentiment in News with LLMs:</b> Zero-Shot and Few-Shot Strategies. PoliticalNLP @ LREC-COLING 2024.</p>
-    <p><b>Analyzing Sentiment Polarity Reduction in News Presentation:</b> ICON 2023.</p>
-    <p><b>Automatic Identification of News-Stakeholders:</b> AAAI Workshop 2023.</p>
-    <p><b>PESE:</b> Event Structure Extraction using Pointer Networks. AACL-IJCNLP 2022.</p>
+    <p><a href="#">News has various shades: Media Bias Analysis (ACM 2024)</a></p>
+    <p><a href="#">From Text to Context: Stakeholder Classification (SIGIR 2024)</a></p>
+    <p><a href="#">Political Sentiment with LLMs (LREC-COLING 2024)</a></p>
+    <p><a href="#">Sentiment Polarity Reduction (ICON 2023)</a></p>
+    <p><a href="#">Stakeholder Identification (AAAI Workshop 2023)</a></p>
+    <p><a href="#">PESE: Event Extraction (AACL-IJCNLP 2022)</a></p>
   </div>
+  <p>👉 Add links from Google Scholar / ACM / arXiv for each paper.</p>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
+<section id="students">
+  <h2>Students</h2>
+  <h3>PhD Students</h3>
   <ul>
-    <li>Assistant Professor, IIITDM Kurnool (Jan 2026 – Present)</li>
-    <li>Research Scientist, IIT Delhi (Aug 2024 – May 2025)</li>
-    <li>Faculty, Sitare University (2025)</li>
-    <li>PhD, IIT Kharagpur (2016–2024)</li>
+    <li>(Add names)</li>
+  </ul>
+  <h3>M.Tech Students</h3>
+  <ul>
+    <li>(Add names)</li>
+  </ul>
+  <h3>B.Tech Students</h3>
+  <ul>
+    <li>(Add names)</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <ul>
+    <li>Artificial Intelligence</li>
+    <li>Data Structures and Algorithms</li>
+    <li>Natural Language Processing</li>
   </ul>
 </section>
 
 <section id="updates">
   <h2>Updates</h2>
   <ul>
-    <li>April 2026: Joined IIITDM Kurnool as Assistant Professor</li>
-    <li>2026: Program Chair at JENAI Workshop (PAKDD)</li>
-    <li>2024: SIGIR publication and Microsoft Research travel grant</li>
+    <li>[April 2026] Joined IIITDM Kurnool as Assistant Professor</li>
+    <li>[2026] Program Chair at JENAI Workshop (PAKDD)</li>
+    <li>[2024] SIGIR publication and Microsoft Research grant</li>
+    <li>👉 Add new updates here regularly</li>
   </ul>
 </section>
 
@@ -93,6 +123,8 @@
     <a href="https://www.semanticscholar.org/author/Alapan-Kuila/2978786">Semantic Scholar</a>
   </p>
 </section>
+
+</div>
 
 <footer>
   <p>© 2026 Dr. Alapan Kuila</p>
